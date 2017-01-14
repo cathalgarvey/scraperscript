@@ -2,9 +2,13 @@
 
 A simple bookmarklet that lets you click any element in a page and returns the smallest unique (and reliable) selector it can find for that element.
 
-Drag "[Help Me Scrape!][bookmarklet]" to your bookmarks toolbar, then try clicking it on a website to load the info frame. If it loads successfully, try clicking something to get a CSS selector.
+Create a bookmark with the following content for the `href`/`link` attribute:
 
-[bookmarklet]: javascript:(function(){_scraper_script=document.createElement('SCRIPT');_scraper_script.type='text/javascript';_scraper_script.src='https://raw.githubusercontent.com/cathalgarvey/scraperscript/master/scraperscript.js';document.getElementsByTagName('head')[0].appendChild(_scraper_script);})();
+```javascript
+javascript:(function(){_scraper_script=document.createElement('SCRIPT');_scraper_script.type='text/javascript';_scraper_script.src='https://raw.githubusercontent.com/cathalgarvey/scraperscript/master/scraperscript.js';document.getElementsByTagName('head')[0].appendChild(_scraper_script);})();
+```
+
+Then, try clicking it on a website to load the info frame. If it loads successfully, try clicking something to get a CSS selector.
 
 Licensed under the WTFPL. A working example can be found at http://cryto.net/scraperscript.
 
