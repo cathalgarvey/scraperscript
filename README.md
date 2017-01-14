@@ -2,11 +2,15 @@
 
 A simple bookmarklet that lets you click any element in a page and returns the smallest unique (and reliable) selector it can find for that element.
 
+Drag "[Help Me Scrape!](https://raw.githubusercontent.com/cathalgarvey/scraperscript/master/scraperscript.js)" to your bookmarks toolbar, then try clicking it on a website to load the info frame. If it loads successfully, try clicking something to get a CSS selector.
+
 Licensed under the WTFPL. A working example can be found at http://cryto.net/scraperscript.
 
 **Usecase:** Figuring out a CSS-style selector for screenscraping.
 
 **How to use the selector:** Use your favourite screenscraping library with CSS selector support. If you are using BeautifulSoup, you'll need to use my [patched version](https://github.com/joepie91/beautifulsoup) to have support for :nth-of-type() pseudoselectors as returned by ScraperScript.
+
+**TODO:** Maybe generating CSS rules on mouseover is more useful, as it would speed up exploration and permit click-free operation on buttons and other "active" content?
 
 **How to make it stop killing my input:** Just click the X in the ScraperScript bar. ScraperScript will release your input.
 
