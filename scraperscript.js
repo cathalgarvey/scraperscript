@@ -1,7 +1,10 @@
 /* Load jQuery */
 _jquery_script=document.createElement("SCRIPT");
-_jquery_script.type="text/javascript";
-_jquery_script.src="http://cryto.net/scraperscript/jquery.js";
+_jquery_script.src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js";
+//_jquery_script.integrity = "sha256-R7aNzoy2gFrVs+pNJ6+SokH04ppcEqJ0yFLkNGoFALQ=";  // Not always permitted without CORS rules- why oh why is this not ALWAYS allowed, Firefox?
+_jquery_script.crossorigin = "anonymous";  // Required for some content policies?
+// _jquery_script.type="text/javascript";  // Not required?
+
 document.getElementsByTagName('head')[0].appendChild(_jquery_script);
 
 function _jquery_done()
